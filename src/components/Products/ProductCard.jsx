@@ -57,6 +57,7 @@ const ProductCard = ({ product }) => {
           alt={product.name}
           className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-sm"
           loading="lazy"
+          decoding="async"
         />
         <span className="absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-white/95 px-3 py-1.5 text-xs font-semibold text-orange-500 shadow-sm opacity-0 group-hover:opacity-100 group-hover/image:opacity-100 transition-opacity duration-300">
           View details

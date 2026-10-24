@@ -25,7 +25,14 @@ const Hero = () => {
         </div>
         {/* hero img */}
         <div className="flex-1">
-          <img src={heroImg} alt="hero img" />
+          <img
+            src={heroImg}
+            alt="Fresh organic groceries"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="w-full h-auto object-contain"
+          />
         </div>
       </div>
     </section>
