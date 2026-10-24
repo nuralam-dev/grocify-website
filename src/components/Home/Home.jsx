@@ -1,10 +1,11 @@
 import Hero from "../Hero/Hero";
-import Navbar from "../Navbar/Navbar";
+import Products from "../Products/Products";
+
 const Home = () => {
   return (
     <div>
-      <Navbar></Navbar>
-      <Hero></Hero>
+      <Hero />
+      <Products />
     </div>
   );
 };
