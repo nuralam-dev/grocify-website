@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImg from "../../assets/grocery.png";
 import Button from "../Button/Button";
 
@@ -18,7 +19,9 @@ const Hero = () => {
             Bred for a high content of beneficial substances. Our products are
             all fresh and healthy.
           </p>
-          <Button content="Shop Now"></Button>
+          <Link to="/products" className="inline-block">
+            <Button content="Shop Now" />
+          </Link>
         </div>
         {/* hero img */}
         <div className="flex-1">

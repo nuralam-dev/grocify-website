@@ -1,4 +1,6 @@
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
+import { IoArrowForward } from "react-icons/io5";
 import ProductCard from "./ProductCard";
 import { CATEGORIES, PRODUCTS_DATA } from "./productsData";
 
@@ -68,9 +70,9 @@ const Products = () => {
           ))}
         </div>
 
-        {/* View More / View Less Button */}
-        {filteredProducts.length > INITIAL_DISPLAY_COUNT && (
-          <div className="mt-12 text-center">
+        {/* Action Buttons: View More & Link to dedicated /products page */}
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+          {filteredProducts.length > INITIAL_DISPLAY_COUNT && (
             <button
               type="button"
               onClick={() => setShowAll(!showAll)}
@@ -78,8 +80,15 @@ const Products = () => {
             >
               {showAll ? "Show Less" : `View All (${filteredProducts.length})`}
             </button>
-          </div>
-        )}
+          )}
+          <Link
+            to="/products"
+            className="inline-flex items-center gap-2 border-2 border-orange-500 text-orange-600 px-7 py-2.5 rounded-lg font-semibold md:text-lg text-md hover:bg-orange-500 hover:text-white transition-all duration-300 cursor-pointer shadow-xs"
+          >
+            <span>Explore Full Catalog</span>
+            <IoArrowForward />
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -44,17 +44,17 @@ const serviceHighlights = [
 const quickLinks = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about" },
-  { label: "Our Products", to: "/#products" },
-  { label: "Process & Quality", to: "/#process" },
-  { label: "Contact Us", to: "/#contact" },
+  { label: "Our Products", to: "/products" },
+  { label: "Process & Quality", to: "/process" },
+  { label: "Contact Us", to: "/contact" },
 ];
 
 const categories = [
-  { label: "Fresh Fruits & Veggies", to: "/#products" },
-  { label: "Dairy & Farm Eggs", to: "/#products" },
-  { label: "Fresh Meat & Seafood", to: "/#products" },
-  { label: "Organic Pantry", to: "/#products" },
-  { label: "Bakery & Breads", to: "/#products" },
+  { label: "Fresh Fruits & Veggies", to: "/products?category=Fruits+%26+Veggies" },
+  { label: "Dairy & Farm Eggs", to: "/products?category=Dairy+%26+Eggs" },
+  { label: "Fresh Meat & Seafood", to: "/products?category=Meat+%26+Seafood" },
+  { label: "Organic Produce", to: "/products" },
+  { label: "All Items", to: "/products" },
 ];
 
 const CURRENT_YEAR = new Date().getFullYear();
